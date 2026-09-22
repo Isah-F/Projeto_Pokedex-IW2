@@ -1,0 +1,241 @@
+body {
+    margin: 0;
+    padding: 30px 0;
+    background-color: #e8e8e8;
+    font-family: 'Oxanium', sans-serif;
+}
+
+.pokedex {
+    max-width: 950px;
+    margin: auto;
+    background-color: white;
+    border: 3px solid #000000;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+
+.pokedex-header {
+    height: 110px;
+    position: relative;
+    padding: 10px 25px;
+    background: linear-gradient(#000000,#313131);
+    border-bottom: 3px solid #000000;
+}
+
+.pokedex-header::before {
+    content: "";
+    position: absolute;
+    top: 18px;
+    right: 25px;
+    width: 12px;
+    height: 12px;
+    background-color: #b31313;
+    border-radius: 50%;
+    box-shadow:-22px 0 0 #797876,-44px 0 0 #fcfcfc;
+    border: 1px solid #777;
+}
+
+.pokedex-header::after {
+    content: "POKÉ API";
+    position: absolute;
+    right: 25px;
+    bottom: 15px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #9c9c9c;
+}
+
+.logo {
+    position: absolute;
+    left: 20px;
+}
+
+.logo img {
+    width: 400px;
+    height: auto;
+    display: block;
+}
+.parte-superior {
+    margin: 0;
+    padding: 20px;
+    border-bottom: 2px solid #979797;
+}
+
+.informacoes {
+    padding: 10px 25px;
+    border-right: 2px solid #979797;
+}
+
+.informacoes h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #303030;
+}
+
+.informacoes p {
+    margin: 8px 0;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #333;
+}
+.informacoes b {
+    color: #444;
+}
+.status {
+    padding: 10px 25px;
+}
+
+.status-item {
+    display: grid;
+    grid-template-columns: 125px 1fr 35px;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+.status-nome {
+    font-size: 15px;
+    font-weight: bold;
+    color: #333;
+}
+.status-valor {
+    font-size: 11px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.barra {
+    width: 100%;
+    height: 12px;
+    background-color: #eeeeee;
+    border: 1px solid #777;
+    border-radius: 2px;
+    overflow: hidden;
+    box-shadow:inset 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.barra-preenchida {
+    width: 0%;
+    height: 100%;
+    background: repeating-linear-gradient(
+        90deg,
+        #424242 0px,
+        #424242 10px,
+        #eeeeee 10px,
+        #eeeeee 12px
+    );
+    transition: width 0.5s ease;
+}
+
+.parte-inferior {
+    margin: 0;
+    min-height: 320px;
+}
+
+.imagem-area {
+    position: relative;
+    min-height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-right:2px solid #979797;
+    background-color: #f8f8f8;
+}
+.imagem-area::before {
+    content: "";
+    position: absolute;
+    width: 260px;
+    height: 260px;
+    border: 2px solid #d0d0d0;
+    border-radius: 30%;
+    z-index: 0;
+}
+
+.pokemon-id {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    z-index: 2;
+}
+.pokemon-id h2 {
+    margin: 0;
+    font-size: 25px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #222;
+}
+
+#poke-img {
+    position: relative;
+    z-index: 1;
+    width: 230px;
+    height: 230px;
+    object-fit: contain;
+}
+
+.btn {
+    background: rgb(179, 19, 19)!important;
+    color: white !important;
+    border: 1px solid rgb(116, 14, 14) !important;
+    font-weight: 500;
+    transition: all 0.3s ease !important;
+}
+
+.btn:hover {
+    background: rgb(116, 14, 14) !important;
+}
+
+.quick-search {
+    padding: 30px;
+    background-color: #f8f8f8;
+}
+
+.quick-search h2 {
+    margin-bottom: 25px;
+    font-size: 25px;
+    font-weight: 900;
+    color: #333;
+}
+
+.quick-search label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.search-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-area input {
+    flex: 1;
+    background-color: #eeeeee;
+    border: 1px solid #8f8f8f;
+    border-radius: 5px;
+}
+
+.search-area button {
+    margin: 0 !important;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+footer {
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(#000000,#313131);
+    border-top: 3px solid #000000;
+    font-size: 12px;
+    color: #ffffff;
+}
